@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mehmet Ağkuş</title>
+</head>
+
+<body>
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-md navbar-light nav-bar-style">
+            <div class="container row d-flex">
+                <div class="col-md-3 justify-content-center">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="ms-5 logo-size"
+                            alt="Logo"></a>
+                    <button class="btn bg-secondary navbar-toggler mobile-button mt-2 me-4" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#mobil-menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+    
+                <div class="collapse navbar-collapse col-md-9 justify-content-center" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Blog
+                                </a>
+                                <ul class="dropdown-menu bg-dark">
+                                    <li><a class="dropdown-item text-white dropdown-bg" href="html.html">HTML</a></li>
+                                    <li><a class="dropdown-item text-white dropdown-bg" href="css.html">CSS</a></li>
+                                    <li><a class="dropdown-item text-white dropdown-bg" href="js.html">JAVASCRİPT</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="demo.html" class="nav-link">Demolar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="iletisim.html" class="nav-link navbar-text">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Navbar-->
+    
+        <!--Mobil Menu-->
+        <div class="offcanvas offcanvas-start mobile-menu" id="mobil-menu">
+            <div id="particle"></div>
+            <div class="offcanvas-header">
+    
+                <h1 class="offcanvas-title"><img src="images/logo.png" class="logo-size" alt="Logo"></h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <a href="index.html" class="nav-link">Ana Sayfa</a>
+                <hr>
+                <div class="btn-group dropend">
+                    <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">
+                        Blog
+                    </a>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item text-white dropdown-bg" href="html.html">HTML</a></li>
+                        <li><a class="dropdown-item text-white dropdown-bg" href="css.html">CSS</a></li>
+                        <li><a class="dropdown-item text-white dropdown-bg" href="js.html">JAVASCRIPT</a></li>
+                    </ul>
+                </div>
+                <hr>
+                <a href="demo.html" class="nav-link">Demolar</a>
+                <hr>
+                <a href="iletisim.html" class="nav-link">İletişim</a>
+            </div>
+            <div class="card-footer d-flex justify-content-around">
+                <a class="social" href="https://www.linkedin.com/in/mehmet-a%C4%9Fku%C5%9F/"><i
+                        class="social fa fa-linkedin fa-3x"></i></a>
+                <a class="social" href="https://www.instagram.com/mehmetagkus/"><i
+                        class="social fa fa-instagram fa-3x"></i></a>
+                <a class="social" href="https://api.whatsapp.com/send?phone=05387238831"><i
+                        class="social fa fa-whatsapp fa-3x"></i></a>
+                <a class="social" href="mailto:mehmetagkus376@gmail.com"><i class="social fa fa-envelope-o fa-3x"></i></a>
+            </div>
+        </div>
+        </div>
+        <!--Mobile Menu-->
+    </header>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/slider1.jpeg" class="default-slider-img" height="100%">
+                <img src="images/slider1-mobil.jpeg" height="100%" class="mobile-slider-img" style="display:none;">
+                <div class="hero">
+                    <p class="hero-text text-nowrap">Kurumsal web siteniz yok mu ?<br>
+                        Bizimle iletişime geçin.<br><br>
+                        <button class="btn btn-dark text-light btn-lg slider-btn"
+                            onClick="parent.location='http://www.google.com'">BİZE
+                            ULAŞIN</button>
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/slider2.jpg" class="default-slider-img" height="100%">
+                <img src="images/slider2-mobil.jpg" height="100%" class="mobile-slider-img" style="display:none;">
+                <div class="hero">
+                    <p class="hero-text text-nowrap" style="color: #000;">Kurumsal web siteniz yok mu ?<br>
+                        Bizimle iletişime geçin.<br><br>
+                        <button class="btn btn-dark text-white btn-lg slider-btn"
+                            onClick="parent.location='http://www.google.com'">BİZE
+                            ULAŞIN</button>
+                    </p>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <div class="contact-area">
+        <form action="message.php" method="POST" class="form mt-5 mb-5">
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control in-input text-white" id="name" placeholder="Adınız" name="name">
+                <label for="name" class="input-floating-text">Adınız</label>
+            </div><br>
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control in-input text-white" id="surname" placeholder="Soyadınız" name="surname">
+                <label for="surname" class="input-floating-text">Soyadınız</label>
+            </div><br>
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control in-input text-white" id="email" placeholder="E-posta Adresiniz" name="email">
+                <label for="email" class="input-floating-text">E-posta</label>
+            </div><br>
+            <div class="form-floating mb-3 mt-3">
+                
+                <textarea name="message" id="message" cols="93" rows="10" class="in-input text-white"
+                    placeholder="Mesajınızı giriniz..."></textarea>
+            </div>
+            <input type="submit" value="Gönder" class="form-control">
+        </form>
+
+    </div>
+    <hr style="height: 3px;">
+    <div class="footer row m-5 mb-5 footer-menu">
+        <div class="col text-center mb-5">
+            <div><a href="index.html" class="text-decoration-none bottom-menu">Ana Sayfa</a></div>
+            <div><a href="blog.html" class="text-decoration-none bottom-menu">Blog</a></div>
+            <div><a href="demo.html" class="text-decoration-none bottom-menu">Demolar</a></div>
+            <div><a href="iletisim.html" class="text-decoration-none bottom-menu">İletişim</a></div>
+        </div>
+        <div class="d-flex justify-content-around col mb-5">
+            <a class="social" href="https://www.linkedin.com/in/mehmet-a%C4%9Fku%C5%9F/"><i
+                    class="social fa fa-linkedin fa-3x"></i></a>
+            <a class="social" href="https://www.instagram.com/mehmetagkus/"><i
+                    class="social fa fa-instagram fa-3x"></i></a>
+            <a class="social" href="https://api.whatsapp.com/send?phone=05387238831"><i
+                    class="social fa fa-whatsapp fa-3x"></i></a>
+            <a class="social" href="mailto:mehmetagkus376@gmail.com"><i class="social fa fa-envelope-o fa-3x"></i></a>
+
+        </div>
+        <div class="col footer-text text-center">Mehmet AĞKUŞ
+            <hr>
+            E-mail :<br> <a href="mailto:mehmetagkus376@gmail.com"
+                class="social text-decoration-none">mehmetagkus376@gmail.com</a>
+            <hr>
+            E-mail : <br><a href="mailto:mehmetagkusiletisim@gmail.com"
+                class="social text-decoration-none">mehmetagkusiletisim@gmail.com</a>
+            <hr>
+            Cep Telefonu : <br><a href="tel:+905387238831" class="social text-decoration-none">+90 538 723 88 31</a>
+            <hr>
+        </div>
+    </div>
+    <div id="particles"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/widget.js"></script>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            spaceBetween: 30,
+            effect: "fade",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+
+
+        ScrollReveal().reveal('.left', {
+            duration: 1000,
+            origin: 'left',
+            distance: '100px',
+            interval: 200,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.right', {
+            duration: 1000,
+            origin: 'right',
+            distance: '100px',
+            interval: 200,
+            reset: true
+        });
+
+        particlesJS("particles", {
+            "particles": {
+                "number": {
+                    "value": 380,
+                    "density": {
+                        "enable": true,
+                        "value_area": 4500
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+        particlesJS("particle", {
+            "particles": {
+                "number": {
+                    "value": 380,
+                    "density": {
+                        "enable": true,
+                        "value_area": 5000
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+
+    </script>
+</body>
+
+</html>
